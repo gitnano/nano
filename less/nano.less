@@ -1,0 +1,32 @@
+﻿/*请勿在CSS文件内修改样式 LESS文件预编译会替换CSS文件*/
+@images: "/Content/images/";
+@color:#f28d01;
+.abutton(@w:100px;@h:34px;@c:@color){
+    width:@w;color:white;background:@c;border-radius:2px;border:1px solid @c;display:block;height:@h;text-align:center;
+    &:hover{background:@c+#111;border:1px solid @c+#111;}
+}
+.sub(@w:100px){width:@w;display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap ;}
+.txetShadow(){text-shadow:0 1px 2px rgba(0,0,0,.3)}
+.r(){float:right}
+.l(){float:left}
+.nselect(){/*appearance:none;*/-moz-appearance:none;-webkit-appearance:none;outline:none; background: url("@{images}sb.png") no-repeat scroll right center transparent;padding-right: 14px;}
+.pinput(@c:#ccc){
+    &::-webkit-input-placeholder { /* WebKit browsers */ color: @c; } 
+    &:-moz-placeholder { /* Mozilla Firefox 4 to 18 */ color: @c;} 
+    &::-moz-placeholder { /* Mozilla Firefox 19+ */ color: @c; } 
+    &:-ms-input-placeholder { /* Internet Explorer 10+ */ color: @c;} 
+}
+.clearfix{
+    overflow:hidden;_zoom:1;
+    &:after{content:".";display:block;height:0;clear:both;visibility:hidden}
+}
+
+
+
+
+
+ul,ol{ list-style: none outside none; }
+a,a:hover{ text-decoration: none;cursor:pointer; }
+
+
+
